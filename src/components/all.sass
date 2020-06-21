@@ -1,0 +1,27 @@
+@import "./Navbar"
+@import "./markupStyle"
+@import "./BlogPost"
+
+/**
+ *  sm: min-width: 640px;
+ *  md: min-width: 768px;
+ *  lg: min-width: 1024px;
+ *  xl: min-width: 1280px;
+ */
+
+.home-page:first-child
+    text-align: center
+
+.content
+    max-width: 70vw
+    margin: auto
+img,video,iframe
+    display: flex
+    margin: 2vh auto 2vh auto
+
+@media only screen and (max-width: 640px)
+    .content
+        max-width: 90vw
+
+    img,video,iframe
+        margin: 1vh auto 1vh auto

@@ -1,0 +1,44 @@
+
+.block
+    display: flex
+    margin: 2vh 0 2vh 0
+
+    .image
+        height: 20vh
+
+        img
+            height: 100%
+
+    .text
+        justify-content: center
+        align-items: center
+        flex-grow: 1
+        display: flex
+        flex-direction: column
+        padding: 0 3vw 0 3vW
+
+@media only screen and (max-width: 800px)
+    .block
+
+        flex-direction: column
+
+        justify-content: center
+        align-items: center
+
+.image
+
+    .text
+        justify-content: center
+        align-items: center
+        flex-grow: 1
+        display: flex
+        flex-direction: column
+        padding: 3vw
+
+@media only screen and (min-width: 800px) and (max-width: 1200px)
+    .reverse
+        flex-direction: row-reverse
+
+@media only screen and (min-width: 1200px)
+    .reverse
+        flex-direction: row-reverse
